@@ -138,6 +138,11 @@ router.get("/report", async (req, res) => {
   }
 });
 
+//not defined
+
+router.all("*", (req, res) => {
+  res.status(404).json({ message: "Endpoint not found" });
+});
 async function getProduct(req, res, next) {
   let product;
   try {
