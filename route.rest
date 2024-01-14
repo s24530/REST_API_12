@@ -1,0 +1,29 @@
+GET http://localhost:3000/products
+
+###
+
+GET http://localhost:3000/products/65a28b967c4aadee51a3d309
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "new name",
+  "price": 11.6,
+  "amount": 1,
+  "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+}
+###
+
+DELETE http://localhost:3000/products/65a28b371d4536e6fb1ba9e1
+
+###
+
+PUT  http://localhost:3000/products/65a28744256e332fa6743d96
+Content-Type: application/json
+
+{
+  "name":"dupa"
+}
